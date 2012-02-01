@@ -2,10 +2,10 @@ set nocompatible
 syntax enable
 set encoding=utf-8
 
-source ~/.vim/bundle/solarized.vim/autoload/togglebg.vim
-
 call pathogen#infect()
 filetype plugin indent on
+
+call togglebg#map("<F5>")
 
 " Some view/ux related stuff
 set background=dark
