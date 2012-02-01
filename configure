@@ -1,0 +1,5 @@
+git submodule update --init
+cp -v .vimrc ~/.vimrc
+cp -Rv * ~/.vim/
+rm -v ~/.vim/bundle/snipmate.vim/plugin/snipMate.vim
+sudo port install p5-app-ack

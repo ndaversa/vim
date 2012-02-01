@@ -1,7 +1,13 @@
-##Install ack via macports
+##Install macports
 ```
-sudo port install p5-app-ack
+http://www.macports.org/install.php
 ```
+
+##Run configure
+```
+sudo ./configure
+```
+
 ##iTerm 2
 ```
 http://code.google.com/p/iterm2/downloads/list
