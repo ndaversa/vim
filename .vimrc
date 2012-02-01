@@ -2,7 +2,7 @@ set nocompatible
 syntax enable
 set encoding=utf-8
 
-source ~/.vim/bundle/vim-colors-solarized/autoload/togglebg.vim
+source ~/.vim/bundle/solarized.vim/autoload/togglebg.vim
 
 call pathogen#infect()
 filetype plugin indent on
@@ -11,6 +11,7 @@ filetype plugin indent on
 set background=dark
 colorscheme solarized
 set ruler                       " show the cursor position all the time
+set number                      " show line numbers
 set cursorline                  " draw a line on the same as the cursor position
 set mouse=a                     " enable mouse support
 set showcmd                     " display incomplete commands
