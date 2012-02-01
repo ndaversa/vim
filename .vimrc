@@ -2,6 +2,7 @@ set nocompatible
 syntax enable
 set encoding=utf-8
 
+runtime bundle/pathogen.vim/autoload/pathogen.vim
 call pathogen#infect()
 filetype plugin indent on
 
