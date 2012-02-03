@@ -16,6 +16,7 @@ set number                      " show line numbers
 set cursorline                  " draw a line on the same as the cursor position
 set mouse=a                     " enable mouse support
 set showcmd                     " display incomplete commands
+set shellcmdflag=-ic            " so aliases from bash profile are avaiable
 set title                       " set the screen title to the currently opened file
 set gcr=n:blinkon0              " stop blinking cursors
 set laststatus=2                " for powerline visiblity
