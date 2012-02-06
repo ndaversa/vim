@@ -153,7 +153,6 @@ command -nargs=1 C CoffeeCompile | :<args>
 
 " CtrlP
 let g:ctrlp_extensions = ['tag']
-let g:ctrlp_root_markers = ['README', 'README.md']
 let g:ctrlp_match_window_bottom = 1
 let g:ctrlp_match_window_reversed = 1
 let g:ctrlp_dotfiles = 0 "so ctrlp won't search dotfiles/dotdirs
