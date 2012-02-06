@@ -58,7 +58,6 @@ set smartcase                   " ... unless they contain at least one capital l
 
 set wildmenu
 set wildmode=list:longest,full
-set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*.png,*.jpg   " for Linux/MacOSX
 
 function s:setupWrapping()
   set wrap
