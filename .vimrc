@@ -24,6 +24,8 @@ set laststatus=2                " for powerline visiblity
 " Allow backgrounding buffers without writing them, and remember marks/undo
 " for backgrounded buffers
 set hidden
+set undofile                    " Save undo's after file closes
+set undodir=~/.vim/undo         " where to save undo histories
 
 " This sends all yanks to the system clipboard (requires building vim with
 " +clipboard support)
