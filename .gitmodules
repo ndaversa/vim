@@ -31,3 +31,6 @@
 [submodule "bundle/gitignore.vim"]
 	path = bundle/gitignore.vim
 	url = https://github.com/vim-scripts/gitignore.git
+[submodule "bundle/supertab.vim"]
+	path = bundle/supertab.vim
+	url = https://github.com/tsaleh/vim-supertab.git
