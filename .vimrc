@@ -161,3 +161,6 @@ let g:ctrlp_match_window_reversed = 1
 let g:ctrlp_dotfiles = 0 "so ctrlp won't search dotfiles/dotdirs
 let g:ctrlp_clear_cache_on_exit = 0
 let g:ctrlp_map = '<leader>f'
+
+" Supertab
+let g:SuperTabDefaultCompletionType = "context"
