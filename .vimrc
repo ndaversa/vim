@@ -112,6 +112,9 @@ map <c-space> ?
 " toggle last buffer
 nnoremap <leader><leader> <c-^>
 
+" goto previous buffer, then delete previous buffer (close buffer, keep split)
+nmap <leader>d :b#<bar>bd#<CR>
+
 " easier navigation between split windows
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
