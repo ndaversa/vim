@@ -5,3 +5,4 @@ sass=.sass,.scss
 --type-set
 coffee=.coffee
 --ignore-dir=node_modules
+--ignore-dir=build
