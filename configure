@@ -1,5 +1,6 @@
 git submodule update --init
 cp -v .vimrc ~/.vimrc
+cp -v .ackrc ~/.ackrc
 cp -Rv * ~/.vim/
 mkdir ~/.vim/undo
 sudo port install p5-app-ack
