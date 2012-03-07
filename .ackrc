@@ -2,4 +2,6 @@
 html=.haml
 --type-add
 css=.sass,.scss
+--type-add
+js=.coffee
 --ignore-dir=node_modules
