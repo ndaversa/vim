@@ -1,8 +1,30 @@
+# General Ack Settings
+####################################################################
+
+# only search with case sensitivity if there is mixed case
+--smart-case
+
+# follow symlinks
+--follow
+
+# Ignore node_modules directories which acking
+--ignore-dir=node_modules
+
+# Ignore build directories which acking
+--ignore-dir=build
+
+# Ack Type Settings
+####################################################################
+
+# add specific type for haml
 --type-set
 haml=.haml
+
+# add specific type for sass
 --type-set
 sass=.sass,.scss
+
+# add specific type for coffee
 --type-set
 coffee=.coffee
---ignore-dir=node_modules
---ignore-dir=build
+
