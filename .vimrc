@@ -109,6 +109,12 @@ cnoremap %% <C-R>=expand('%:h').'/'<cr>
 map <space> /
 map <c-space> ?
 
+" Ack
+nnoremap <leader>a :Ack 
+
+" Ack for the last search.
+nnoremap <silent> <leader>qa/ :execute "Ack! '" . substitute(substitute(substitute(@/, "\\\\<", "\\\\b", ""), "\\\\>", "\\\\b", ""), "\\\\v", "", "") . "'"<CR>
+
 " toggle last buffer
 nnoremap <leader><leader> <c-^>
 
