@@ -108,6 +108,12 @@ cnoremap %% <C-R>=expand('%:h').'/'<cr>
 map <space> /
 map <c-space> ?
 
+" Quickfix open
+nnoremap <leader>qo :copen<CR>
+
+" Quickfix close
+nnoremap <leader>qc :ccl<CR>
+
 " Ack
 nnoremap <leader>a :Ack 
 
