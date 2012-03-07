@@ -2,3 +2,4 @@
 html=.haml
 --type-add
 css=.sass,.scss
+--ignore-dir=node_modules
