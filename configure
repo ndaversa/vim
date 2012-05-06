@@ -1,5 +1,6 @@
 git submodule update --init
 git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+cp iterm/blinks.zsh-theme ~/.oh-my-zsh/themes/blinks.zsh-theme
 chsh -s /bin/zsh
 cp -v .zshrc ~/.zshrc
 cp -v .tmux.conf ~/.tmux.conf
