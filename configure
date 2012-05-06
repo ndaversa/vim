@@ -13,3 +13,4 @@ make reattach-to-user-namespace &&
 cp reattach-to-user-namespace ~/bin
 cd ../..
 sudo port install p5-app-ack
+./osx
