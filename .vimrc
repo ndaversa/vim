@@ -10,6 +10,11 @@ call togglebg#map("<F5>")
 
 " Some view/ux related stuff
 set background=dark
+let g:indent_guides_auto_colors = 0
+let g:indent_guides_start_level = 3
+let g:indent_guides_guide_size = 1
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=lightgreen   ctermbg=0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=lightcyan ctermbg=10
 colorscheme solarized
 set ruler                       " show the cursor position all the time
 set number                      " show line numbers

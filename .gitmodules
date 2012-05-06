@@ -37,3 +37,9 @@
 [submodule "bundle/tcomment.vim"]
 	path = bundle/tcomment.vim
 	url = git://github.com/tomtom/tcomment_vim.git
+[submodule "bundle/vim-indent-guides.vim"]
+	path = bundle/vim-indent-guides.vim
+	url = https://github.com/nathanaelkane/vim-indent-guides.git
+[submodule "iterm/tmux-MacOSX-pasteboard"]
+	path = iterm/tmux-MacOSX-pasteboard
+	url = https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard.git
