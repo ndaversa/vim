@@ -11,6 +11,7 @@ cp -Rv * ~/.vim/
 mkdir ~/.vim/undo/
 cd iterm/tmux-MacOSX-pasteboard
 make reattach-to-user-namespace &&
+mkdir ~/bin
 cp reattach-to-user-namespace ~/bin
 cd ../..
 sudo port install p5-app-ack
