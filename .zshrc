@@ -47,6 +47,7 @@ export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:~/node_mod
 export PATH=~/bin:$PATH
 export PATH=/usr/local/bin:$PATH
 export PATH=/opt/local/bin:$PATH
+export POLAR=Ninos-iMac.160913734.members.btmm.icloud.com.
 alias npmi="npm install -g"
 alias chrome='open -a "Google Chrome"'
 alias rvm="~/.rvm/bin/rvm"
@@ -76,6 +77,6 @@ alias bs='rake build && rake serve'
 alias t='$PWD/tools/commands/commands test'
 alias rb='rake build'
 alias rs='rake serve'
-alias xp='ssh xp@Ninos-iMac.160913734.members.btmm.icloud.com.'
-alias tunnel='ssh -N -p 22 xp@Ninos-iMac.160913734.members.btmm.icloud.com. -L 3000/localhost/3000'
+alias xp='ssh xp@$POLAR'
+alias tunnel='ssh -N -p 22 xp@$POLAR -L 3000/localhost/3000'
 cop
