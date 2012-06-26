@@ -128,6 +128,10 @@ nnoremap <silent> <leader>qa/ :execute "Ack! '" . substitute(substitute(substitu
 " toggle last buffer
 nnoremap <leader><leader> <c-^>
 
+" Paste last yanked item, even after deleting.
+noremap <Leader>p "0p
+noremap <Leader>P "0P
+
 " goto previous buffer, then delete previous buffer (close buffer, keep split)
 nmap <leader>d :b#<bar>bd#<CR>
 
