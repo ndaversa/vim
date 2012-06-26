@@ -137,11 +137,11 @@ nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 
-" disable cursor keys in normal mode
-map <Left>  :echo "no!"<cr>
-map <Right> :echo "no!"<cr>
-map <Up>    :echo "no!"<cr>
-map <Down>  :echo "no!"<cr>
+" resize windows quickly using arrow keys
+nnoremap <Right> :vertical resize +3<cr>
+nnoremap <Left> :vertical resize -3<cr>
+nnoremap <Up> :resize +3<cr>
+nnoremap <Down> :resize -3<cr>
 
 "" Plugin config
 
