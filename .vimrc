@@ -170,13 +170,14 @@ let g:NERDTreeQuitOnOpen = 1
   \},
   \ 'sro' : ".",
   \ 'ctagsbin' : 'coffeetags',
-  \ 'ctagsargs' : '--include-vars',
+  \ 'ctagsargs' : '',
   \}
 
 
 nnoremap <leader>l :TagbarToggle<CR>
 nnoremap <leader>i :silent!coffeetags -R \| sed '/\.\/build\//d' > tags<CR>
 nnoremap <leader>t :CtrlPTag<CR>
+nnoremap <leader>b :CtrlPBuffer<CR>
 
 "coffee compile
 vmap <leader>c <esc>:'<,'>:CoffeeCompile<CR>
