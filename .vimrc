@@ -65,6 +65,7 @@ set cc=80                       " set colorcolumn 80 to visualize 80th column
 
 set wildmenu
 set wildmode=list:longest,full
+set wildignore+=*/build/*
 
 function s:setupWrapping()
   set wrap
@@ -82,6 +83,8 @@ if has("autocmd")
   au BufRead,BufNewFile coffee setf coffee
   au BufRead,BufNewFile Jakefile setf javascript
   au BufNewFile,BufRead *.jst set ft=html
+  au BufNewFile,BufRead *.template set ft=html
+  au BufNewFile,BufRead *.recipe set ft=coffee
 
   " Treat JSON files like JavaScript
   au BufNewFile,BufRead *.json set ft=javascript
@@ -167,12 +170,18 @@ let g:NERDTreeQuitOnOpen = 1
   \},
   \ 'sro' : ".",
   \ 'ctagsbin' : 'coffeetags',
-  \ 'ctagsargs' : ' ',
+  \ 'ctagsargs' : '--include-vars',
   \}
+
+
+nnoremap <leader>l :TagbarToggle<CR>
+nnoremap <leader>i :silent!coffeetags -R \| sed '/\.\/build\//d' > tags<CR>
+nnoremap <leader>t :CtrlPTag<CR>
 
 "coffee compile
 vmap <leader>c <esc>:'<,'>:CoffeeCompile<CR>
 map <leader>c :CoffeeCompile<CR>
+
 
 " c:number to jump coffee/js
 command -nargs=1 C CoffeeCompile | :<args>
@@ -182,6 +191,7 @@ let g:ctrlp_extensions = ['tag']
 let g:ctrlp_match_window_bottom = 1
 let g:ctrlp_match_window_reversed = 1
 let g:ctrlp_dotfiles = 0 "so ctrlp won't search dotfiles/dotdirs
+let g:ctrlp_custom_ignore = 'build\|node_modules'
 let g:ctrlp_clear_cache_on_exit = 0
 let g:ctrlp_map = '<leader>f'
 
