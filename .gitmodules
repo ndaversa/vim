@@ -40,3 +40,9 @@
 [submodule "iterm/tmux-MacOSX-pasteboard"]
 	path = iterm/tmux-MacOSX-pasteboard
 	url = https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard.git
+[submodule "bundle/supertab.vim"]
+	path = bundle/supertab.vim
+	url = https://github.com/ervandew/supertab.git
+[submodule "bundle/syntastic.vim"]
+	path = bundle/syntastic.vim
+	url = git://github.com/scrooloose/syntastic.git

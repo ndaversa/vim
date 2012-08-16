@@ -174,6 +174,13 @@ let g:NERDTreeQuitOnOpen = 1
   \}
 
 
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_auto_jump=1
+let g:syntastic_error_symbol='✗'
+let g:syntastic_warning_symbol='⚠'
+
 nnoremap <leader>l :TagbarToggle<CR>
 nnoremap <leader>i :silent!coffeetags -R \| sed '/\.\/build\//d' > tags<CR>
 nnoremap <leader>t :CtrlPTag<CR>
