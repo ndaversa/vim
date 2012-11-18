@@ -174,15 +174,6 @@ let g:NERDTreeQuitOnOpen = 1
   \ 'ctagsargs' : '',
   \}
 
-
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-let g:syntastic_auto_jump=1
-let g:syntastic_error_symbol='✗'
-let g:syntastic_warning_symbol='⚠'
-let g:syntastic_disabled_filetypes = ['scss', 'sass', 'css']
-
 nnoremap <leader>l :TagbarToggle<CR>
 nnoremap <leader>i :silent!coffeetags -R \| sed '/\.\/build\//d' > tags<CR>
 nnoremap <leader>t :CtrlPTag<CR>
