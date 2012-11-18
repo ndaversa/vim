@@ -1,0 +1,22 @@
+#!/bin/bash -e
+
+mkdir -p ~/.vim/undo/
+mkdir -p ~/.config/fish/
+mkdir -p ~/bin
+git submodule update --init
+
+cp -v fish/config.fish ~/.config/fish/config.fish
+cp -Rv fish/completions ~/.config/fish/
+cp -Rv fish/functions ~/.config/fish/
+cp -v .tmux.conf ~/.tmux.conf
+cp -v .vimrc ~/.vimrc
+cp -v .ackrc ~/.ackrc
+cp -Rv * ~/.vim/
+cd iterm/tmux-MacOSX-pasteboard
+make reattach-to-user-namespace &&
+cp reattach-to-user-namespace ~/bin
+cd ../..
+
+./osx
+sudo port install p5-app-ack
+chsh -s /usr/local/bin/fish

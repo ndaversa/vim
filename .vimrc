@@ -2,6 +2,7 @@ set nocompatible
 syntax enable
 set encoding=utf-8
 
+filetype off
 runtime bundle/pathogen.vim/autoload/pathogen.vim
 call pathogen#infect()
 filetype plugin indent on
@@ -180,6 +181,7 @@ set statusline+=%*
 let g:syntastic_auto_jump=1
 let g:syntastic_error_symbol='✗'
 let g:syntastic_warning_symbol='⚠'
+let g:syntastic_disabled_filetypes = ['scss', 'sass', 'css']
 
 nnoremap <leader>l :TagbarToggle<CR>
 nnoremap <leader>i :silent!coffeetags -R \| sed '/\.\/build\//d' > tags<CR>
@@ -193,14 +195,18 @@ map <leader>c :CoffeeCompile<CR>
 
 " c:number to jump coffee/js
 command -nargs=1 C CoffeeCompile | :<args>
+command W :w
+command Vs :vs
+command Wq :wq
 
 " CtrlP
 let g:ctrlp_extensions = ['tag']
 let g:ctrlp_match_window_bottom = 1
 let g:ctrlp_match_window_reversed = 1
 let g:ctrlp_dotfiles = 0 "so ctrlp won't search dotfiles/dotdirs
-let g:ctrlp_custom_ignore = 'build\|node_modules'
+let g:ctrlp_custom_ignore = 'build'
 let g:ctrlp_clear_cache_on_exit = 0
+let g:ctrlp_follow_symlinks = 1
 let g:ctrlp_map = '<leader>f'
 
 " Supertab

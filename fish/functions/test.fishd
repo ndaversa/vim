@@ -1,0 +1,4 @@
+function test
+  sdk
+  bin/test
+end

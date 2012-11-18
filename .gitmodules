@@ -43,9 +43,6 @@
 [submodule "bundle/supertab.vim"]
 	path = bundle/supertab.vim
 	url = https://github.com/ervandew/supertab.git
-[submodule "bundle/syntastic.vim"]
-	path = bundle/syntastic.vim
-	url = git://github.com/scrooloose/syntastic.git
 [submodule "bundle/tagbar.vim"]
 	path = bundle/tagbar.vim
 	url = https://github.com/majutsushi/tagbar.git
