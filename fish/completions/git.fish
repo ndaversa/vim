@@ -1,7 +1,7 @@
 # fish completion for git
 
 function __fish_git_branches
-  git branch --no-color -a 2>/dev/null | sed 's/^..//; s/^remotes\///'
+  git branch --no-color -a 2>/dev/null | sed 's/^..//; s/^remotes\///; s/^origin\///'
 end
 
 function __fish_git_tags
