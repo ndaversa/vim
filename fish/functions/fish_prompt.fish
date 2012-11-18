@@ -1,3 +1,6 @@
+set __fish_git_prompt_showupstream auto
+set __fish_git_prompt_color_upstream magenta
+
 set __fish_git_prompt_showdirtystate true
 set __fish_git_prompt_color_dirtystate red --bold
 
