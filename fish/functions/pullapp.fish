@@ -1,4 +1,4 @@
 function pullapp
-	rsync -zvrci --delete $WORK:$HOME/$DEV/$APPLICATION/ $HOME/$DEV/$APPLICATION/
+	rsync -zvrci --delete $WORK:$HOME/$DEV/$APP/ $HOME/$DEV/$APP/
 end;
 

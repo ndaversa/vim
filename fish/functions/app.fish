@@ -1,3 +1,3 @@
 function app
-  cd $HOME/$DEV/$APPLICATION
+  cd $HOME/$DEV/$APP
 end;
