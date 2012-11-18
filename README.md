@@ -5,7 +5,7 @@ http://www.macports.org/install.php
 
 ##Run configure
 ```
-sudo ./configure
+bin/configure
 ```
 
 ##iTerm 2
