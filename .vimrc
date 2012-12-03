@@ -192,6 +192,7 @@ command Wq :wq
 
 " CtrlP
 let g:ctrlp_extensions = ['tag']
+let g:ctrlp_working_path_mode = 'rw'
 let g:ctrlp_match_window_bottom = 1
 let g:ctrlp_match_window_reversed = 1
 let g:ctrlp_dotfiles = 0 "so ctrlp won't search dotfiles/dotdirs
