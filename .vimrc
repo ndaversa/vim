@@ -1,3 +1,4 @@
+set shell=/bin/bash
 set nocompatible
 syntax enable
 set encoding=utf-8
