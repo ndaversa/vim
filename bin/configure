@@ -18,5 +18,6 @@ cp reattach-to-user-namespace ~/bin
 cd ../..
 
 ./osx
+sudo gem install CoffeeTags
 sudo port install p5-app-ack
 chsh -s /usr/local/bin/fish
