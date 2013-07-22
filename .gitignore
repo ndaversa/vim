@@ -1,1 +1,3 @@
 *.DS_Store
+fish/fish_history
+vim/.netrwhist
