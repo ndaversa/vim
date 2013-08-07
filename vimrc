@@ -110,6 +110,9 @@ let mapleader=";"
 " clear the search buffer when hitting ;return
 map <silent> <leader><cr> :noh<cr>
 
+" Remove all trailing whitespace before saving
+autocmd FileType c,cpp,java,php,js,less,css,twig autocmd BufWritePre <buffer> :%s/\s\+$//e
+
 " double percentage sign in command mode is expanded
 " to directory of current file - http://vimcasts.org/e/14
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
@@ -125,7 +128,7 @@ nnoremap <leader>qo :copen<CR>
 nnoremap <leader>qc :ccl<CR>
 
 " Ack
-nnoremap <leader>a :Ack 
+nnoremap <leader>a :Ack
 
 " Ack for the last search.
 nnoremap <silent> <leader>qa/ :execute "Ack! '" . substitute(substitute(substitute(@/, "\\\\<", "\\\\b", ""), "\\\\>", "\\\\b", ""), "\\\\v", "", "") . "'"<CR>
@@ -160,7 +163,7 @@ nnoremap <leader>n :NERDTreeToggle<CR>
 " quit NERDTree after opening a file
 let g:NERDTreeQuitOnOpen = 1
 
-" CoffeeTags 
+" CoffeeTags
  let g:tagbar_type_coffee = {
   \ 'kinds' : [
   \   'f:functions',
@@ -196,11 +199,12 @@ let g:ctrlp_extensions = ['tag']
 let g:ctrlp_working_path_mode = 'rw'
 let g:ctrlp_match_window_bottom = 1
 let g:ctrlp_match_window_reversed = 1
-let g:ctrlp_dotfiles = 0 "so ctrlp won't search dotfiles/dotdirs
+let g:ctrlp_dotfiles = 1 "so ctrlp won't search dotfiles/dotdirs
 let g:ctrlp_custom_ignore = 'build'
 let g:ctrlp_clear_cache_on_exit = 0
 let g:ctrlp_follow_symlinks = 1
 let g:ctrlp_map = '<leader>f'
+let g:ctrlp_regexp = 1
 
 " Supertab
 let g:SuperTabDefaultCompletionType = "context"
