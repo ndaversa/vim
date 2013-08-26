@@ -128,7 +128,7 @@ nnoremap <leader>qo :copen<CR>
 nnoremap <leader>qc :ccl<CR>
 
 " Ack
-nnoremap <leader>a :Ack
+nnoremap <leader>a :Ack<space>
 
 " Ack for the last search.
 nnoremap <silent> <leader>qa/ :execute "Ack! '" . substitute(substitute(substitute(@/, "\\\\<", "\\\\b", ""), "\\\\>", "\\\\b", ""), "\\\\v", "", "") . "'"<CR>
@@ -154,6 +154,7 @@ nnoremap <Right> :vertical resize +3<cr>
 nnoremap <Left> :vertical resize -3<cr>
 nnoremap <Up> :resize +3<cr>
 nnoremap <Down> :resize -3<cr>
+nnoremap <Bar> :vertical-resize<cr>
 
 "" Plugin config
 
@@ -208,3 +209,9 @@ let g:ctrlp_regexp = 1
 
 " Supertab
 let g:SuperTabDefaultCompletionType = "context"
+
+" Fugitive
+autocmd QuickFixCmdPost *grep* cwindow
+
+" Ack
+nnoremap <leader>g :Ggrep 
