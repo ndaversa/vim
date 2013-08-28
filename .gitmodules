@@ -49,3 +49,12 @@
 [submodule "bundle/surround.vim"]
 	path = bundle/surround.vim
 	url = https://github.com/tpope/vim-surround.git
+[submodule "bundle/blade.vim"]
+	path = bundle/blade.vim
+	url = git@github.com:johnhamelink/blade.vim.git
+[submodule "bundle/twig.vim"]
+	path = bundle/twig.vim
+	url = git@github.com:lunaru/vim-twig.git
+[submodule "bundle/vim-less"]
+	path = bundle/vim-less
+	url = git@github.com:groenewege/vim-less.git

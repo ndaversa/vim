@@ -67,7 +67,6 @@ set cc=80                       " set colorcolumn 80 to visualize 80th column
 
 set wildmenu
 set wildmode=list:longest,full
-set wildignore+=*/build/*
 
 function s:setupWrapping()
   set wrap
@@ -196,16 +195,15 @@ command Vs :vs
 command Wq :wq
 
 " CtrlP
-let g:ctrlp_extensions = ['tag']
 let g:ctrlp_working_path_mode = 'rw'
 let g:ctrlp_match_window_bottom = 1
 let g:ctrlp_match_window_reversed = 1
 let g:ctrlp_dotfiles = 1 "so ctrlp won't search dotfiles/dotdirs
-let g:ctrlp_custom_ignore = 'build'
-let g:ctrlp_clear_cache_on_exit = 0
 let g:ctrlp_follow_symlinks = 1
 let g:ctrlp_map = '<leader>f'
 let g:ctrlp_regexp = 1
+let g:ctrlp_user_command =
+    \ ['.git', 'cd %s && git ls-files . -co --exclude-standard']
 
 " Supertab
 let g:SuperTabDefaultCompletionType = "context"
