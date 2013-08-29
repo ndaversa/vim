@@ -52,3 +52,6 @@
 [submodule "bundle/vim-less"]
 	path = bundle/vim-less
 	url = git@github.com:groenewege/vim-less.git
+[submodule "bundle/airline.vim"]
+	path = bundle/airline.vim
+	url = https://github.com/bling/vim-airline.git
