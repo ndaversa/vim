@@ -55,3 +55,6 @@
 [submodule "bundle/airline.vim"]
 	path = bundle/airline.vim
 	url = https://github.com/bling/vim-airline.git
+[submodule "bundle/handlebars.vim"]
+	path = bundle/handlebars.vim
+	url = git@github.com:nono/vim-handlebars.git
