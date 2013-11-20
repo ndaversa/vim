@@ -3,6 +3,9 @@ set nocompatible
 syntax enable
 set encoding=utf-8
 
+set relativenumber
+set number
+
 filetype off
 runtime bundle/pathogen.vim/autoload/pathogen.vim
 call pathogen#infect()
@@ -153,7 +156,8 @@ nnoremap <Right> :vertical resize +3<cr>
 nnoremap <Left> :vertical resize -3<cr>
 nnoremap <Up> :resize +3<cr>
 nnoremap <Down> :resize -3<cr>
-nnoremap <Bar> :vertical-resize<cr>
+nnoremap <Bar> <c-w><Bar>
+nnoremap = <c-w>=
 
 "" Plugin config
 
