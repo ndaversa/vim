@@ -14,5 +14,6 @@ function hosts
   sudo cp /tmp/hosts /etc/hosts
   sudo launchctl unload /Library/LaunchDaemons/homebrew.mxcl.dnsmasq.plist
   sudo launchctl load /Library/LaunchDaemons/homebrew.mxcl.dnsmasq.plist
+  sudo pfctl -evf ~/pf.conf
   cat /etc/hosts
 end;
