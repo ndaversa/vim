@@ -16,9 +16,6 @@
 [submodule "bundle/solarized.vim"]
 	path = bundle/solarized.vim
 	url = https://github.com/altercation/vim-colors-solarized.git
-[submodule "bundle/snipmate.vim"]
-	path = bundle/snipmate.vim
-	url = https://github.com/msanders/snipmate.vim.git
 [submodule "bundle/cocoa.vim"]
 	path = bundle/cocoa.vim
 	url = https://github.com/msanders/cocoa.vim.git
