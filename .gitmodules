@@ -58,6 +58,3 @@
 [submodule "bundle/handlebars.vim"]
 	path = bundle/handlebars.vim
 	url = git@github.com:nono/vim-handlebars.git
-[submodule "bundle/supertab.vim"]
-	path = bundle/supertab.vim
-	url = git@github.com:ervandew/supertab.git
