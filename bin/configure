@@ -2,7 +2,7 @@
 
 mkdir -p ~/.config
 mkdir -p ~/bin
-git submodule update --init
+git submodule update --init --recursive
 
 ln -Ffvs ~/dev/vim/fish ~/.config/fish
 ln -Ffvs ~/dev/vim/vim ~/.vim
@@ -16,6 +16,12 @@ cp reattach-to-user-namespace ~/bin
 cd ../..
 
 ./osx
-sudo gem install CoffeeTags
-sudo port install p5-app-ack
+brew install ack
+brew install cmake
+cd bundle/youcompleteme.vim
+./install.sh
+cd ../..
+cd bundle/tern.vim
+npm install
+cd ../..
 chsh -s /usr/local/bin/fish

@@ -58,3 +58,6 @@
 [submodule "bundle/tern.vim"]
 	path = bundle/tern.vim
 	url = git@github.com:marijnh/tern_for_vim.git
+[submodule "bundle/youcompleteme.vim"]
+	path = bundle/youcompleteme.vim
+	url = git@github.com:Valloric/YouCompleteMe.git

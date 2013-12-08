@@ -142,9 +142,6 @@ nnoremap <leader><leader> <c-^>
 noremap <Leader>p "0p
 noremap <Leader>P "0P
 
-" goto previous buffer, then delete previous buffer (close buffer, keep split)
-nmap <leader>d :b#<bar>bd#<CR>
-
 " easier navigation between split windows
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
@@ -191,6 +188,9 @@ nnoremap <leader>b :CtrlPBuffer<CR>
 vmap <leader>c <esc>:'<,'>:CoffeeCompile<CR>
 map <leader>c :CoffeeCompile<CR>
 
+" Tern
+nnoremap <leader>d :TernDef<CR>
+nnoremap <leader>r :TernRefs<CR>
 
 " c:number to jump coffee/js
 command -nargs=1 C CoffeeCompile | :<args>
@@ -208,32 +208,6 @@ let g:ctrlp_map = '<leader>f'
 let g:ctrlp_regexp = 0
 let g:ctrlp_user_command =
     \ ['.git', 'cd %s && git ls-files . -co --exclude-standard']
-
-
-function! Smart_TabComplete()
-  let line = getline('.')                         " current line
-
-  let substr = strpart(line, -1, col('.')+1)      " from the start of the current
-                                                  " line to one character right
-                                                  " of the cursor
-  let substr = matchstr(substr, "[^ \t]*$")       " word till cursor
-  if (strlen(substr)==0)                          " nothing to match on empty string
-    return "\<tab>"
-  endif
-  let has_period = match(substr, '\.') != -1      " position of period, if any
-  let has_slash = match(substr, '\/') != -1       " position of slash, if any
-  if (!has_period && !has_slash)
-    return "\<C-X>\<C-P>"                         " existing text matching
-  elseif ( has_slash )
-    return "\<C-X>\<C-F>"                         " file matching
-  else
-    return "\<C-X>\<C-O>"                         " plugin matching
-  endif
-endfunction
-
-" Activate omni completion by using tab in insert mode
-inoremap <tab> <c-r>=Smart_TabComplete()<CR>
-
 
 " Fugitive
 autocmd QuickFixCmdPost *grep* cwindow
