@@ -58,3 +58,6 @@
 [submodule "bundle/handlebars.vim"]
 	path = bundle/handlebars.vim
 	url = git@github.com:nono/vim-handlebars.git
+[submodule "bundle/tern.vim"]
+	path = bundle/tern.vim
+	url = git@github.com:marijnh/tern_for_vim.git
