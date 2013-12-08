@@ -1,6 +1,6 @@
-##Install macports
+##Install Homebrew
 ```
-http://www.macports.org/install.php
+ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go/install)"
 ```
 
 ##Install Fish Shell
