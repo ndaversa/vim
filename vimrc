@@ -156,6 +156,9 @@ nnoremap <Down> :resize -3<cr>
 nnoremap <Bar> <c-w><Bar>
 nnoremap = <c-w>=
 
+" format ugly json with python
+map <leader>j  <ESC>:%!python -m json.tool<CR>
+
 "" Plugin config
 
 " NERDTree

@@ -1,5 +1,6 @@
 set fish_greeting ""
 set PATH /usr/local/bin $PATH
+set PATH /usr/local/opt/ruby/bin $PATH
 set PATH /opt/local/bin $PATH
 set PATH ~/bin $PATH
 set PATH "/Applications/Android Studio.app/sdk/platform-tools" $PATH
