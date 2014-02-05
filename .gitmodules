@@ -61,3 +61,6 @@
 [submodule "bundle/youcompleteme.vim"]
 	path = bundle/youcompleteme.vim
 	url = git@github.com:Valloric/YouCompleteMe.git
+[submodule "bundle/jsbeautify.vim"]
+	path = bundle/jsbeautify.vim
+	url = git@github.com:maksimr/vim-jsbeautify.git
