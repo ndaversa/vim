@@ -115,6 +115,9 @@ inoremap jj <ESC>
 "Disable <Esc> to undo muscle memory
 inoremap <Esc> <CR>
 
+"Enable repeat operation in visual mode
+vnoremap . :norm.<CR>
+
 " clear the search buffer when hitting ;return
 map <silent> <leader><cr> :noh<cr>
 
