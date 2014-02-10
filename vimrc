@@ -109,6 +109,12 @@ set scrolloff=3
 "" Mappings
 let mapleader=";"
 
+"Use jj to <ESC>
+inoremap jj <ESC>
+
+"Disable <Esc> to undo muscle memory
+inoremap <Esc> <CR>
+
 " clear the search buffer when hitting ;return
 map <silent> <leader><cr> :noh<cr>
 
