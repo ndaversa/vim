@@ -9,11 +9,21 @@ function generateHosts
   echo (ip)             m.wattpad.dev wap.wattpad.dev get.wattpad.dev mobile.wattpad.dev touch.wattpad.dev
 end;
 
+function generateRules
+  echo rdr pass on lo0 inet proto tcp from any to any port 80 -\> (ip) port 8080
+  echo rdr pass on en0 inet proto tcp from any to any port 80 -\> (ip) port 8080
+  echo rdr pass on lo0 inet proto tcp from any to any port 443 -\> (ip) port 8081
+  echo rdr pass on en0 inet proto tcp from any to any port 443 -\> (ip) port 8081
+end;
+
 function hosts
   generateHosts > /tmp/hosts
   sudo cp /tmp/hosts /etc/hosts
+  generateRules > /tmp/rules
+  cp /tmp/rules ~/rules.rules
   sudo launchctl unload /Library/LaunchDaemons/homebrew.mxcl.dnsmasq.plist
   sudo launchctl load /Library/LaunchDaemons/homebrew.mxcl.dnsmasq.plist
   sudo pfctl -evf ~/pf.conf
   cat /etc/hosts
+  cat ~/rules.rules
 end;
