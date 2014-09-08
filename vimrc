@@ -109,8 +109,10 @@ set scrolloff=3
 "" Mappings
 let mapleader=";"
 
-"Use jj to <ESC>
+"Use hh,jj, or kk to <ESC>
+inoremap hh <ESC>
 inoremap jj <ESC>
+inoremap kk <ESC>
 
 "Disable <Esc> to undo muscle memory
 inoremap <Esc> <CR>
@@ -172,6 +174,10 @@ map <leader>j :call JsBeautify()<cr>
 
 " NERDTree
 nnoremap <leader>n :NERDTreeToggle<CR>
+
+" Open the current buffer in the nerd tree
+nnoremap <leader>s :NERDTreeFind<CR>
+nnoremap <leader>r :NERDTreeFind<CR>
 
 " quit NERDTree after opening a file
 let g:NERDTreeQuitOnOpen = 1
