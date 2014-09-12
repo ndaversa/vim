@@ -6,7 +6,7 @@ function generateHosts
   echo (ip)             wattpad.dev www.wattpad.dev api.wattpad.dev
   echo (ip)             blog.wattpad.dev
   echo (ip)             embed.wattpad.dev kik.wattpad.dev
-  echo (ip)             m.wattpad.dev wap.wattpad.dev get.wattpad.dev mobile.wattpad.dev touch.wattpad.dev
+  echo (ip)             t.wattpad.dev m.wattpad.dev wap.wattpad.dev get.wattpad.dev mobile.wattpad.dev touch.wattpad.dev
 end;
 
 function generateRules
