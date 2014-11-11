@@ -13,5 +13,10 @@ set CAROUSELJS "carousel.js"
 set DESIGN "design"
 set MARKETING "marketing"
 set ap "web"
+set fe "frontend"
+set -x DOCKER_HOST tcp://192.168.59.103:2376
+set -x DOCKER_CERT_PATH /Users/ndaversa/.boot2docker/certs/boot2docker-vm
+set -x DOCKER_TLS_VERIFY 1
+set -x WWW_CONTAINER_ID (docker ps | grep chefrepo_www | awk '{print $1}')
 alias vi="vim"
 ap

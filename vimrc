@@ -232,3 +232,9 @@ autocmd QuickFixCmdPost *grep* cwindow
 
 " Ack
 nnoremap <leader>g :Ggrep 
+
+" Colorizer
+let g:colorizer_auto_color = 1
+let g:colorizer_auto_filetype='less'
+let g:colorizer_skip_comments = 1
+let g:colorizer_x11_names = 1

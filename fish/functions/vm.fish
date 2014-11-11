@@ -1,4 +1,3 @@
 function vm
-  cd $HOME/$DEV/$CHEF
-  vagrant ssh
+  docker exec -it $WWW_CONTAINER_ID bash
 end;
