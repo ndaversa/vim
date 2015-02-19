@@ -217,6 +217,7 @@ command Vs :vs
 command Wq :wq
 
 " CtrlP
+let g:ctrlp_custom_ignore = 'node_modules'
 let g:ctrlp_working_path_mode = 'rw'
 let g:ctrlp_match_window_bottom = 1
 let g:ctrlp_match_window_reversed = 1
@@ -225,7 +226,7 @@ let g:ctrlp_follow_symlinks = 1
 let g:ctrlp_map = '<leader>f'
 let g:ctrlp_regexp = 0
 let g:ctrlp_user_command =
-    \ ['.git', 'cd %s && git ls-files . -co --exclude-standard']
+    \ ['.git', 'cd %s && git ls-files . -co --exclude-standard | grep -v "node_modules"']
 
 " Fugitive
 autocmd QuickFixCmdPost *grep* cwindow

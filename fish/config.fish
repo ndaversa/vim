@@ -5,7 +5,7 @@ set PATH /opt/local/bin $PATH
 set PATH ~/bin $PATH
 set PATH "/Applications/Android Studio.app/sdk/platform-tools" $PATH
 set PATH "/Applications/Android Studio.app/sdk/tools" $PATH
-set MINI "server.160913734.members.btmm.icloud.com."
+set MINI "mini.160913734.members.btmm.icloud.com."
 set DEV "dev"
 set WEB "web"
 set CHEF "chef-repo"
@@ -18,5 +18,7 @@ set -x DOCKER_HOST tcp://192.168.59.103:2376
 set -x DOCKER_CERT_PATH /Users/ndaversa/.boot2docker/certs/boot2docker-vm
 set -x DOCKER_TLS_VERIFY 1
 set -x WWW_CONTAINER_ID (docker ps | grep chefrepo_www | awk '{print $1}')
+set -x REDIS_CONTAINER_ID (docker ps | grep chefrepo_redis | awk '{print $1}')
+set -x ENV_VMTOOL_LOCATION /usr/sbin/vm
 alias vi="vim"
 ap
