@@ -20,6 +20,8 @@ let g:indent_guides_start_level = 3
 let g:indent_guides_guide_size = 1
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=lightgreen   ctermbg=0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=lightcyan ctermbg=10
+" let g:solarized_termcolors=256
+let g:solarized_visibility =  "high"
 colorscheme solarized
 set ruler                       " show the cursor position all the time
 set number                      " show line numbers
@@ -89,12 +91,12 @@ if has("autocmd")
   au BufNewFile,BufRead *.jst set ft=html
   au BufNewFile,BufRead *.template set ft=html
   au BufNewFile,BufRead *.recipe set ft=coffee
+  au BufNewFile,BufRead *.phps set ft=php
 
   " Treat JSON files like JavaScript
   au BufNewFile,BufRead *.json set ft=javascript
 
-  " make Python follow PEP8 ( http://www.python.org/dev/peps/pep-0008/ )
-  au FileType python set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79
+  au FileType php set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79
 
   " Remember last location in file, but not for commit messages.
   " see :help last-position-jump
