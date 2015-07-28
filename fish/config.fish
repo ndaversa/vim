@@ -1,4 +1,5 @@
 set fish_greeting ""
+set PATH /usr/local/sbin $PATH
 set PATH /usr/local/bin $PATH
 set PATH /usr/local/opt/ruby/bin $PATH
 set PATH /opt/local/bin $PATH
@@ -14,11 +15,6 @@ set DESIGN "design"
 set MARKETING "marketing"
 set ap "web"
 set fe "frontend"
-set -x DOCKER_HOST tcp://192.168.59.103:2376
-set -x DOCKER_CERT_PATH /Users/ndaversa/.boot2docker/certs/boot2docker-vm
-set -x DOCKER_TLS_VERIFY 1
-set -x WWW_CONTAINER_ID (docker ps | grep chefrepo_www | awk '{print $1}')
-set -x REDIS_CONTAINER_ID (docker ps | grep chefrepo_redis | awk '{print $1}')
-set -x ENV_VMTOOL_LOCATION /usr/sbin/vm
 alias vi="vim"
-ap
+fe
+boot2docker shellinit | source
