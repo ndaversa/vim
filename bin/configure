@@ -2,6 +2,7 @@
 
 mkdir -p ~/.config
 mkdir -p ~/bin
+mkdir -p ~/.vim/undodir
 git submodule update --init --recursive
 
 ln -Ffvs ~/dev/vim/fish ~/.config/fish
@@ -19,6 +20,7 @@ cd ../..
 ./osx
 brew install ack
 brew install cmake
+brew install fish
 cd bundle/youcompleteme.vim
 ./install.sh
 cd ../..
