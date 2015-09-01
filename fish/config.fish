@@ -6,6 +6,7 @@ set PATH /opt/local/bin $PATH
 set PATH ~/bin $PATH
 set PATH "/Applications/Android Studio.app/sdk/platform-tools" $PATH
 set PATH "/Applications/Android Studio.app/sdk/tools" $PATH
+set PATH "~/.nvm/" $PATH
 set MINI "mini.160913734.members.btmm.icloud.com."
 set DEV "dev"
 set WEB "web"
@@ -18,3 +19,5 @@ set fe "frontend"
 alias vi="vim"
 fe
 boot2docker shellinit | source
+set -x NVM_DIR ~/.nvm
+/usr/local/opt/nvm/nvm.sh | source

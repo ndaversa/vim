@@ -70,3 +70,6 @@
 [submodule "bundle/go.vim"]
 	path = bundle/go.vim
 	url = git@github.com:fatih/vim-go.git
+[submodule "bundle/jsx.vim"]
+	path = bundle/jsx.vim
+	url = https://github.com/mxw/vim-jsx.git

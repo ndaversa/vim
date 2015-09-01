@@ -21,10 +21,13 @@ cd ../..
 brew install ack
 brew install cmake
 brew install fish
-cd bundle/youcompleteme.vim
-./install.sh
-cd ../..
-cd bundle/tern.vim
-npm install
-cd ../..
+
+#install bass: https://github.com/edc/bass
+echo "Install bass"
+cd ..
+git clone git@github.com:edc/bass.git
+cd bass
+make install
+echo "Done installing bass"
+
 chsh -s /usr/local/bin/fish

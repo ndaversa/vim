@@ -242,5 +242,8 @@ let g:colorizer_auto_filetype='less'
 let g:colorizer_skip_comments = 1
 let g:colorizer_x11_names = 1
 
+" JSX
+let g:jsx_ext_required = 0 "allow JSX parsing in JS files
+
 " Copy current relative file path to system clipboard
 nnoremap <leader>cf :let @*=expand("%")<CR>
