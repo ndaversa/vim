@@ -245,5 +245,9 @@ let g:colorizer_x11_names = 1
 " JSX
 let g:jsx_ext_required = 0 "allow JSX parsing in JS files
 
+" YouCompleteMe
+let g:ycm_autoclose_preview_window_after_insertion = 1
+let g:ycm_add_preview_to_completeopt = 1
+
 " Copy current relative file path to system clipboard
 nnoremap <leader>cf :let @*=expand("%")<CR>
