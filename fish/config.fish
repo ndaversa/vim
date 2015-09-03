@@ -16,6 +16,8 @@ set DESIGN "design"
 set MARKETING "marketing"
 set ap "web"
 set fe "frontend"
+set hal "hal"
+set jira "hubot-jira-bot"
 alias vi="vim"
 fe
 boot2docker shellinit | source
