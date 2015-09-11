@@ -2,7 +2,6 @@
 
 mkdir -p ~/.config
 mkdir -p ~/bin
-mkdir -p ~/.vim/undodir
 git submodule update --init --recursive
 
 ln -Ffvs ~/dev/vim/fish ~/.config/fish
@@ -11,6 +10,8 @@ ln -Ffvs ~/dev/vim/tmux.conf ~/.tmux.conf
 ln -Ffvs ~/dev/vim/vimrc ~/.vimrc
 ln -Ffvs ~/dev/vim/editorconfig ~/.editorconfig
 ln -Ffvs ~/dev/vim/ackrc ~/.ackrc
+
+mkdir -p ~/.vim/undodir
 
 cd iterm/tmux-MacOSX-pasteboard
 make reattach-to-user-namespace &&
