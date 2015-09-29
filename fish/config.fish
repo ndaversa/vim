@@ -18,6 +18,7 @@ set ap "web"
 set fe "frontend"
 set hal "hal"
 set jira "hubot-jira-bot"
+set github "hubot-github-bot"
 alias vi="vim"
 fe
 boot2docker shellinit | source

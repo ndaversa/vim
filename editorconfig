@@ -7,6 +7,7 @@ space_in_paren = true
 indent_style = space
 indent_size = 2
 brace_style = end-expand
+e4x = true
 
 [**.css]
 indent_style = space

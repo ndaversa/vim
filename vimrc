@@ -171,6 +171,7 @@ nnoremap = <c-w>=
 
 " Format with JsBeautify
 map <leader>j :call JsBeautify()<cr>
+vnoremap <buffer>  <leader>j :call RangeJsBeautify()<cr>
 
 "" Plugin config
 
