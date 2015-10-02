@@ -1,3 +1,3 @@
 function web
-  cd $HOME/$DEV/$WEB
+  cd $HOME/$DEV/$web
 end;
