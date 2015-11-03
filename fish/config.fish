@@ -19,8 +19,7 @@ set fe "frontend"
 set hal "hal"
 set jira "hubot-jira-bot"
 set github "hubot-github-bot"
-alias vi="vim"
 hal
 boot2docker shellinit | source
-set -x NVM_DIR ~/.nvm
-/usr/local/opt/nvm/nvm.sh | source
+#set -x NVM_DIR ~/.nvm
+#/usr/local/opt/nvm/nvm.sh | source

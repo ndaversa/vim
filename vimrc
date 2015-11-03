@@ -14,7 +14,7 @@ filetype plugin indent on
 call togglebg#map("<F5>")
 
 " Some view/ux related stuff
-set background=dark
+set background=light
 let g:indent_guides_auto_colors = 0
 let g:indent_guides_start_level = 3
 let g:indent_guides_guide_size = 1
@@ -88,6 +88,7 @@ if has("autocmd")
 
   au BufRead,BufNewFile coffee setf coffee
   au BufRead,BufNewFile Jakefile setf javascript
+  au BufNewFile,BufRead *.js set ft=javascript
   au BufNewFile,BufRead *.jst set ft=html
   au BufNewFile,BufRead *.template set ft=html
   au BufNewFile,BufRead *.recipe set ft=coffee
