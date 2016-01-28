@@ -7,12 +7,6 @@
 # follow symlinks
 --follow
 
-# Ignore node_modules directories which acking
---ignore-dir=node_modules
-
-# Ignore build directories which acking
---ignore-dir=build
-
 # Ack Type Settings
 ####################################################################
 

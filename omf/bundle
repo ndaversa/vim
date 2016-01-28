@@ -1,0 +1,4 @@
+package foreign-env
+package nvm
+package vi-mode
+theme default

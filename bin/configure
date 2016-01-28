@@ -5,6 +5,7 @@ mkdir -p ~/bin
 git submodule update --init --recursive
 
 ln -Ffvs ~/dev/vim/fish ~/.config/fish
+ln -Ffvs ~/dev/vim/omf/ ~/.config/omf
 ln -Ffvs ~/dev/vim/vim ~/.vim
 ln -Ffvs ~/dev/vim/tmux.conf ~/.tmux.conf
 ln -Ffvs ~/dev/vim/vimrc ~/.vimrc
@@ -36,3 +37,6 @@ make install
 echo "Done installing bass"
 
 chsh -s /usr/local/bin/fish
+
+#install oh-my-fish
+curl -L https://github.com/oh-my-fish/oh-my-fish/raw/master/bin/install | fish
