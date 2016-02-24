@@ -18,6 +18,8 @@ set fe "frontend"
 set hal "hal"
 set jira "hubot-jira-bot"
 set github "hubot-github-bot"
+set hope "new-hope-schedule-opt"
 hal
 boot2docker shellinit | source
 set -x NVM_DIR ~/.nvm
+test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish

@@ -6,3 +6,4 @@ set -gx OMF_PATH "/Users/ndaversa/.local/share/omf"
 
 # Load oh-my-fish configuration.
 source $OMF_PATH/init.fish
+
