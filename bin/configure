@@ -23,10 +23,13 @@ cd ../..
 brew install ack
 brew install cmake
 brew install fish
+brew install rust
+brew install go
+npm install -g typescript
 
 #setup youcompleteme
 cd bundle/youcompleteme.vim
-./install.py --clang-completer --gocode-completer
+./install.py --clang-completer --gocode-completer --tern-completer --racer-completer
 
 #install bass: https://github.com/edc/bass
 echo "Install bass"
