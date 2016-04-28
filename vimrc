@@ -253,3 +253,9 @@ let g:ycm_add_preview_to_completeopt = 1
 
 " Copy current relative file path to system clipboard
 nnoremap <leader>cf :let @*=expand("%")<CR>
+
+" Rainbow Parentheses
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
