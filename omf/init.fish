@@ -21,6 +21,7 @@ set jira "hubot-jira-bot"
 set github "hubot-github-bot"
 set hope "new-hope-schedule-opt"
 eval (docker-machine env)
+eval (boot2docker shellinit)
 hal
 set -x NVM_DIR ~/.nvm
 test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
