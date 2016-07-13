@@ -21,20 +21,21 @@ BASH = 'bash'
 def gen_script():
     divider = '-__-__-__bass___-env-output-__bass_-__-__-__-__'
 
-    args = [BASH, '-c', 'env']
+    # Use the following instead of /usr/bin/env to read environment so we can
+    # deal with multi-line environment variables (and other odd cases).
+    env_reader = "python -c 'import os,json; print(json.dumps({k:v for k,v in os.environ.items()}))'"
+    args = [BASH, '-c', env_reader]
     output = subprocess.check_output(args, universal_newlines=True)
-    old_env = output.splitlines()
+    old_env = output.strip()
 
-    command = '{}; echo "{}"; env'.format(' '.join(sys.argv[1:]), divider)
+    command = '{}; echo "{}"; {}'.format(' '.join(sys.argv[1:]), divider, env_reader)
     args = [BASH, '-c', command]
     output = subprocess.check_output(args, universal_newlines=True)
     stdout, new_env = output.split(divider, 1)
-    new_env = new_env.lstrip().splitlines()
+    new_env = new_env.strip()
 
-    new_env = [line for line in new_env if '{' not in line and '}' not in line]
-
-    old_env = dict([line.split('=', 1) for line in old_env])
-    new_env = dict([line.split('=', 1) for line in new_env])
+    old_env = json.loads(old_env)
+    new_env = json.loads(new_env)
 
     skips = ['PS1', 'SHLVL', 'XPC_SERVICE_NAME']
 
@@ -65,6 +66,10 @@ def gen_script():
             f.write('set -g -x %s %s\n' % (k, value))
 
     return f.name
+
+if not sys.argv[1:]:
+    print('__usage')
+    sys.exit(0)
 
 try:
     name = gen_script()
