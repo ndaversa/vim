@@ -19,4 +19,10 @@ set -g jira "hubot-jira-bot"
 set -g github "hubot-github-bot"
 set -g hope "new-hope-schedule-opt"
 set -gx NVM_DIR ~/.nvm
+
+# GOLANG configurations
+set -gx GOPATH $HOME/$DEV
+set -gx GOROOT /usr/local/opt/go/libexec
+set PATH $GOPATH/bin $GOROOT/bin $PATH
+
 hal
