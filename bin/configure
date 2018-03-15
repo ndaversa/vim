@@ -36,7 +36,7 @@ npm install -g typescript
 
 #setup youcompleteme
 cd bundle/youcompleteme.vim
-./install.py --clang-completer --gocode-completer --tern-completer
+./install.py --clang-completer --tern-completer
 
 #install bass: https://github.com/edc/bass
 echo "Install bass"
