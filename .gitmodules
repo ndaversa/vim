@@ -67,9 +67,6 @@
 [submodule "bundle/colorizer.vim"]
 	path = bundle/colorizer.vim
 	url = git@github.com:chrisbra/Colorizer.git
-[submodule "bundle/go.vim"]
-	path = bundle/go.vim
-	url = git@github.com:fatih/vim-go.git
 [submodule "bundle/rainbow_parentheses.vim"]
 	path = bundle/rainbow_parentheses.vim
 	url = git@github.com:kien/rainbow_parentheses.vim.git

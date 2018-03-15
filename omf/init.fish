@@ -19,6 +19,7 @@ set -g jira "hubot-jira-bot"
 set -g github "hubot-github-bot"
 set -g hope "new-hope-schedule-opt"
 set -gx NVM_DIR ~/.nvm
+set -gx KUBECONFIG "/Users/ndaversa/dev/miranda/k8s/clusters/yemanja/kubeconfig"
 
 # GOLANG configurations
 set -gx GOPATH $HOME/$DEV
