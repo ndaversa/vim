@@ -7,7 +7,12 @@ set t_BE=
 set regexpengine=1
 set relativenumber
 set number
-let g:loaded_matchparen = 1
+let loaded_matchparen=1 " Don't load matchit.vim (paren/bracket matching)
+set nocursorcolumn      " Don't paint cursor column
+set lazyredraw          " Wait to redraw
+set scrolljump=8        " Scroll 8 lines at a time at bottom/top
+let html_no_rendering=1 " Don't render italic, bold, links in HTML
+
 
 filetype off
 runtime bundle/pathogen.vim/autoload/pathogen.vim
