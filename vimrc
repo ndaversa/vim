@@ -4,8 +4,10 @@ syntax enable
 set encoding=utf-8
 set t_BE=
 
+set regexpengine=1
 set relativenumber
 set number
+let g:loaded_matchparen = 1
 
 filetype off
 runtime bundle/pathogen.vim/autoload/pathogen.vim
